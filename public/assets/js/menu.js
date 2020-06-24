@@ -1,26 +1,21 @@
 'use strict';
 
 {
-  const menuModule = (() => {
-    return {
-        toggleNav: () => {
-            document.getElementById('nav_toggle_button').addEventListener('click', event => {
-                const classes = document.querySelector('html').classList
-                if (classes.value.includes('nav_open')) {
-                    classes.remove('nav_open')
-                } else {
-                    classes.add('nav_open')
-                }
-            })
-        },
-        closeNav: () => {
-            document.getElementById('js_black_bg').addEventListener('click', event => {
-                document.querySelector('html').classList.remove('nav_open')
-            })
-        }
-    }
-  })();
-  
-  menuModule.toggleNav();
-  menuModule.closeNav();
+  document.addEventListener('DOMContentLoaded', () => {
+      const menu_btn = document.getElementById('menu_btn');
+      const header_nav = document.getElementById('header_nav');
+      const black_bg = document.getElementById('black_bg');
+
+      menu_btn.addEventListener('click', () => {
+          menu_btn.classList.toggle('active');
+          header_nav.classList.toggle('active');
+          black_bg.classList.toggle('active');
+      })
+
+      black_bg.addEventListener('click', () => {
+        menu_btn.classList.toggle('active');
+        header_nav.classList.toggle('active');
+        black_bg.classList.toggle('active');
+      })
+  });
 }
