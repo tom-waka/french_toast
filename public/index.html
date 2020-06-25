@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>株式会社フレンチトースト</title>
-  <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
   <header class="fixed_nav">
@@ -53,52 +54,51 @@
 
     <section class="members section_wrapper">
       <h2>Members</h2>
-      <div class="members_list">
-        <article>
-          <div class="profile">
-            <img class="img" src="./assets/img/bread.png" alt="">
-            <h3>食パン<span>（代表取締役）</span></h3>
-            <p>
-              サンドイッチやピザトーストなどマルチな業界を経験後、オンリーワンの価値を探し求め、㈱フレンチトーストを設立。
-            </p>
-          </div>
-        </article>
-        <article>
-          <div class="profile">
-            <img class="img" src="./assets/img/egg.png" alt="">
-            <h3>タマゴ<span>（営業部）</span></h3>
-            <p>
-              マネージャーとして、数々のプロジェクトを成功へと導く。その折衝能力は他の追随を許さない。
-            </p>
-          </div>
-        </article>
-        <article>
-          <div class="profile">
-            <img class="img" src="./assets/img/milk.png" alt="">
-            <h3>牛乳<span>（人事部）</span></h3>
-            <p>
-              給食業界で活躍をしていたが、食パンに出会い同社へ。実力は折り紙付きだが、子供からの人気は両極端。
-            </p>
-          </div>
-        </article>
-        <article>
-          <div class="profile">
-            <img class="img" src="./assets/img/butter.png" alt="">
-            <h3>バター<span>（開発部）</span></h3>
-            <p>
-              同社の心臓部と言っても過言ではない。サラダ油で代用しようものなら、まったくの別モノが出来上がる。
-            </p>
-          </div>
-        </article>
-        <article>
-          <div class="profile">
-            <img class="img" src="./assets/img/sugar.png" alt="">
-            <h3>砂糖<span>（総務部）</span></h3>
-            <p>
-              何でもそつなくこなす敏腕社員。スイーツ業界からの信頼は厚いが、塩と間違えると大事故を引き起こす。
-            </p>
-          </div>
-        </article>
+      <div class="swiper-container members_list">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide profile">
+              <img class="img" src="./assets/img/bread.png" alt="">
+              <h3>食パン<span>（代表取締役）</span></h3>
+              <p>
+                サンドイッチやピザトーストなどマルチな業界を経験後、オンリーワンの価値を探し求め、㈱フレンチトーストを設立。
+              </p>
+            </div>
+            <div class="swiper-slide profile">
+              <img class="img" src="./assets/img/egg.png" alt="">
+              <h3>タマゴ<span>（営業部）</span></h3>
+              <p>
+                マネージャーとして、数々のプロジェクトを成功へと導く。その折衝能力は他の追随を許さない。
+              </p>
+            </div>
+            <div class="swiper-slide profile">
+              <img class="img" src="./assets/img/milk.png" alt="">
+              <h3>牛乳<span>（人事部）</span></h3>
+              <p>
+                給食業界で活躍をしていたが、食パンに出会い同社へ。実力は折り紙付きだが、子供からの人気は両極端。
+              </p>
+            </div>
+            <div class="swiper-slide profile">
+              <img class="img" src="./assets/img/butter.png" alt="">
+              <h3>バター<span>（開発部）</span></h3>
+              <p>
+                同社の心臓部と言っても過言ではない。サラダ油で代用しようものなら、まったくの別モノが出来上がる。
+              </p>
+            </div>
+            <div class="swiper-slide profile">
+              <img class="img" src="./assets/img/sugar.png" alt="">
+              <h3>砂糖<span>（総務部）</span></h3>
+              <p>
+                何でもそつなくこなす敏腕社員。スイーツ業界からの信頼は厚いが、塩と間違えると大事故を引き起こす。
+              </p>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev btn_prev">
+          <i class="fas fa-chevron-circle-left"></i>
+        </div> 
+        <div class="swiper-button-next btn_next">
+          <i class="fas fa-chevron-circle-right"></i>
+        </div>
       </div>
     </section>
   </main>
@@ -107,5 +107,7 @@
     フッター
   </footer>
   <script src="./assets/js/menu.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+  <script src="./assets/js/carousel.js"></script>
 </body>
 </html>
