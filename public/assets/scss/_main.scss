@@ -1,3 +1,22 @@
+.section_wrapper {
+  width: 100%;
+  padding: 2rem 0;
+  background: #ffffff;
+  border-bottom: 1px solid;
+
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  p {
+    text-align: center;
+    margin: 0 .5rem;
+  }
+} 
+
+//first_view---------------------------------------------------------------------- 
 .first_view {
   position: relative;
   height: 100vh;
@@ -30,19 +49,7 @@
   }
 }
 
-.section_wrapper {
-  width: 100%;
-  padding: 2rem 0;
-  background: #ffffff;
-  border-bottom: 1px solid;
-
-  h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-  }
-}  
-
+//Vison---------------------------------------------------------------------- 
 .vision {
   height: 100vh;
   position: relative;
@@ -61,13 +68,9 @@
     font-size: 1.5rem;
     margin-bottom: 3rem;
   }
-
-  p {
-    text-align: center;
-    margin: 0 .5rem;
-  }
 }
 
+//Members---------------------------------------------------------------------- 
 .members_list{
   display: flex;
   flex-direction: row;
@@ -97,7 +100,7 @@
     font-size: 0.95rem;
     color: gray;
   }
-  p {
+  div {
     font-size: .95rem;
   }
 }
@@ -119,6 +122,30 @@
 
 .btn_prev, .btn_next {
   font-size: 2rem;
+}
+
+//Services---------------------------------------------------------------------- 
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0.5rem 0;
+  }
+  .show_btn {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    margin: 2rem 1rem;
+    padding: 1rem 0;
+    border: 1px solid;
+    border-radius: 1rem;
+  }
 }
 
 
