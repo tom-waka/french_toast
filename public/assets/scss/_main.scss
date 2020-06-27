@@ -1,8 +1,7 @@
 .section_wrapper {
   width: 100%;
-  padding: 2rem 0;
+  margin:2rem 0 6rem;
   background: #ffffff;
-  border-bottom: 1px solid;
 
   h2 {
     text-align: center;
@@ -55,7 +54,7 @@
   position: relative;
   &_img {
     position: absolute;
-    bottom:  0;
+    bottom:  50px;
     left:  0;
     right:  0;
     width: 100%;
@@ -135,20 +134,7 @@
     display: inline-block;
     margin: 0.5rem 0;
   }
-  .show_btn {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-    width: 90%;
-    max-width: 400px;
-    margin: 2rem 1rem;
-    padding: 1rem 0;
-    border: 1px solid;
-    border-radius: 1rem;
-  }
 }
-
-
 
 @media screen and (min-width: 416px) {
   .profile {

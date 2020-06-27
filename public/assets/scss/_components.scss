@@ -1,0 +1,44 @@
+.btn {
+  overflow: hidden;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 0 1rem 1rem;
+  margin: 2rem;
+  width: 300px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 0.1em;
+  color: #000;
+  border: 1px solid;
+  border-radius: 5px;
+  background: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.btn div {
+  position: relative;
+}
+
+.btn:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 500%;
+  content: "";
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-95%);
+  background: #000;
+}
+
+.btn:hover:before {
+  transform: translateX(-20%);
+}
