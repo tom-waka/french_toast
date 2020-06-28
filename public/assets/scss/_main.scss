@@ -6,7 +6,7 @@
   h2 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   p {
@@ -128,11 +128,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  span {
-    font-size: 1.5rem;
-    font-weight: bold;
-    display: inline-block;
-    margin: 0.5rem 0;
+  .description {
+    width: 100vw;
+    .services_list {
+      display: flex;
+      justify-content: space-evenly;
+      height: 15vh;
+      background: #ececec;
+    }
+    li {
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 10px white;
+      margin: auto 0;
+    }
   }
 }
 
