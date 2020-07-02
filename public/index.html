@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
 </head>
 <body>
   <header class="fixed_nav">
@@ -39,9 +41,9 @@
     </section>
 
     <section class="vision section_wrapper">
-      <h2>Vision</h2>
-      <h3>未踏の「知」への一歩</h3>
-      <div class="description">
+      <h2 class="animated" data-animate="fadeInUp slow">Vision</h2>
+      <h3 class="description animated" data-animate="fadeInUp slow">未踏の「知」への一歩</h3>
+      <div class="description animated" data-animate="fadeInUp slow">
         <p>「卵と牛乳を混ぜて、<br>食パンを浸して焼いたら、美味しそう」<br>なんて、誰が最初に考えたのだろう。
         </p>
         <div class="space_medium"></div>
@@ -53,7 +55,7 @@
     </section>
 
     <section class="members section_wrapper">
-      <h2>Members</h2>
+      <h2 class="animated" data-animate="fadeInUp slow">Members</h2>
       <div class="swiper-container members_list">
         <div class="swiper-wrapper">
             <div class="swiper-slide profile">
@@ -126,5 +128,7 @@
   <script src="./assets/js/menu.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
   <script src="./assets/js/carousel.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script src="./assets/js/animate.js"></script>
 </body>
 </html>
